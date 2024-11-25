@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Progress Example View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ProgressExampleViewController" customModule="ExampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DaV-pg-yp8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pNq-Oe-QTu" customClass="OMCircularProgress" customModule="ExampleSwift" customModuleProvider="target">
+                                <frame key="frameInset" minX="3" minY="2" width="154" height="154"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-az-Jm3" customClass="OMCircularProgress" customModule="ExampleSwift" customModuleProvider="target">
+                                <frame key="frameInset" minX="163" minY="2" width="154" height="154"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sjg-IQ-Z7V" customClass="OMCircularProgress" customModule="ExampleSwift" customModuleProvider="target">
+                                        <frame key="frameInset" width="154" height="154"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61A-JK-aY8" customClass="OMCircularProgress" customModule="ExampleSwift" customModuleProvider="target">
+                                                <frame key="frameInset" width="154" height="154"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="61A-JK-aY8" secondAttribute="bottom" id="Brq-Af-d8p"/>
+                                            <constraint firstItem="61A-JK-aY8" firstAttribute="top" secondItem="Sjg-IQ-Z7V" secondAttribute="top" id="J5n-uc-Dlt"/>
+                                            <constraint firstAttribute="trailing" secondItem="61A-JK-aY8" secondAttribute="trailing" id="SKu-lW-bSh"/>
+                                            <constraint firstItem="61A-JK-aY8" firstAttribute="leading" secondItem="Sjg-IQ-Z7V" secondAttribute="leading" id="YLo-cC-8zp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Sjg-IQ-Z7V" secondAttribute="trailing" id="NEb-j5-Z2f"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sjg-IQ-Z7V" secondAttribute="bottom" id="glw-UZ-6Gg"/>
+                                    <constraint firstItem="Sjg-IQ-Z7V" firstAttribute="leading" secondItem="Zqg-az-Jm3" secondAttribute="leading" id="nmU-tg-gph"/>
+                                    <constraint firstItem="Sjg-IQ-Z7V" firstAttribute="top" secondItem="Zqg-az-Jm3" secondAttribute="top" id="ofy-2Z-kt9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uyf-im-w8A" customClass="OMCircularProgress" customModule="ExampleSwift" customModuleProvider="target">
+                                <frame key="frameInset" minX="3" minY="160" width="154" height="154"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTn-1I-JSP" customClass="OMCircularProgress" customModule="ExampleSwift" customModuleProvider="target">
+                                <frame key="frameInset" minX="163" minY="320" width="154" height="154"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uoF-o6-Cqx" customClass="OMCircularProgress" customModule="ExampleSwift" customModuleProvider="target">
+                                <frame key="frameInset" minX="3" minY="320" width="154" height="154"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eil-PD-c5a" customClass="OMCircularProgress" customModule="ExampleSwift" customModuleProvider="target">
+                                <frame key="frameInset" minX="163" minY="160" width="154" height="154"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zqg-az-Jm3" firstAttribute="top" secondItem="DaV-pg-yp8" secondAttribute="top" constant="2" id="25G-H0-ewe"/>
+                            <constraint firstItem="uoF-o6-Cqx" firstAttribute="top" secondItem="uyf-im-w8A" secondAttribute="bottom" constant="6" id="2WF-ek-Arv"/>
+                            <constraint firstItem="Eil-PD-c5a" firstAttribute="width" secondItem="vTn-1I-JSP" secondAttribute="width" id="4gU-GJ-94j"/>
+                            <constraint firstItem="Eil-PD-c5a" firstAttribute="height" secondItem="uoF-o6-Cqx" secondAttribute="height" id="5Zb-k0-Hhj"/>
+                            <constraint firstItem="Eil-PD-c5a" firstAttribute="height" secondItem="uyf-im-w8A" secondAttribute="height" id="8mz-8g-veC"/>
+                            <constraint firstItem="Eil-PD-c5a" firstAttribute="height" secondItem="vTn-1I-JSP" secondAttribute="height" id="B7u-xC-qXU"/>
+                            <constraint firstItem="uyf-im-w8A" firstAttribute="top" secondItem="pNq-Oe-QTu" secondAttribute="bottom" constant="4" id="BRL-Nc-Am0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vTn-1I-JSP" secondAttribute="bottom" constant="6" id="Cez-us-eYs"/>
+                            <constraint firstItem="Zqg-az-Jm3" firstAttribute="leading" secondItem="pNq-Oe-QTu" secondAttribute="trailing" constant="6" id="DUd-qd-zfh"/>
+                            <constraint firstAttribute="trailing" secondItem="vTn-1I-JSP" secondAttribute="trailing" constant="3" id="Gae-B1-0Mg"/>
+                            <constraint firstItem="Eil-PD-c5a" firstAttribute="width" secondItem="uyf-im-w8A" secondAttribute="width" id="Ioe-6P-WCK"/>
+                            <constraint firstItem="Eil-PD-c5a" firstAttribute="leading" secondItem="uyf-im-w8A" secondAttribute="trailing" constant="6" id="Neh-yF-eBM"/>
+                            <constraint firstItem="Eil-PD-c5a" firstAttribute="height" secondItem="pNq-Oe-QTu" secondAttribute="height" id="Ntd-j4-Mrh"/>
+                            <constraint firstItem="uoF-o6-Cqx" firstAttribute="leading" secondItem="DaV-pg-yp8" secondAttribute="leading" constant="3" id="PFF-WH-KrD"/>
+                            <constraint firstItem="Eil-PD-c5a" firstAttribute="height" secondItem="Zqg-az-Jm3" secondAttribute="height" id="Snm-lC-LlD"/>
+                            <constraint firstItem="Eil-PD-c5a" firstAttribute="width" secondItem="uoF-o6-Cqx" secondAttribute="width" id="T6n-Ua-feu"/>
+                            <constraint firstItem="vTn-1I-JSP" firstAttribute="top" secondItem="Eil-PD-c5a" secondAttribute="bottom" constant="6" id="TyU-w9-klB"/>
+                            <constraint firstItem="Eil-PD-c5a" firstAttribute="top" secondItem="Zqg-az-Jm3" secondAttribute="bottom" constant="4" id="VOV-gF-FFp"/>
+                            <constraint firstItem="vTn-1I-JSP" firstAttribute="leading" secondItem="uoF-o6-Cqx" secondAttribute="trailing" constant="6" id="cON-RQ-Cai"/>
+                            <constraint firstAttribute="trailing" secondItem="Zqg-az-Jm3" secondAttribute="trailing" constant="3" id="cmO-dg-u3Z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uoF-o6-Cqx" secondAttribute="bottom" constant="6" id="ddA-7Z-xz3"/>
+                            <constraint firstItem="uyf-im-w8A" firstAttribute="leading" secondItem="DaV-pg-yp8" secondAttribute="leading" constant="3" id="dpd-0f-hro"/>
+                            <constraint firstAttribute="trailing" secondItem="Eil-PD-c5a" secondAttribute="trailing" constant="3" id="hB8-yG-Yoi"/>
+                            <constraint firstItem="Eil-PD-c5a" firstAttribute="width" secondItem="Zqg-az-Jm3" secondAttribute="width" id="hYg-cb-5lA"/>
+                            <constraint firstItem="pNq-Oe-QTu" firstAttribute="leading" secondItem="DaV-pg-yp8" secondAttribute="leading" constant="3" id="ib5-BP-yIz"/>
+                            <constraint firstItem="pNq-Oe-QTu" firstAttribute="top" secondItem="DaV-pg-yp8" secondAttribute="top" constant="2" id="u2d-ol-ZV6"/>
+                            <constraint firstItem="Eil-PD-c5a" firstAttribute="width" secondItem="pNq-Oe-QTu" secondAttribute="width" id="zeR-1f-xZx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressViewClockHours" destination="Zqg-az-Jm3" id="U8u-ij-AbF"/>
+                        <outlet property="progressViewClockMinutes" destination="Sjg-IQ-Z7V" id="wca-El-khD"/>
+                        <outlet property="progressViewClockSeconds" destination="61A-JK-aY8" id="Mkr-vJ-jIx"/>
+                        <outlet property="progressViewFlower" destination="vTn-1I-JSP" id="G8R-rs-Af0"/>
+                        <outlet property="progressViewGradientMask" destination="uoF-o6-Cqx" id="edZ-pd-P1I"/>
+                        <outlet property="progressViewImagesWithDifferentsSize" destination="uyf-im-w8A" id="Uya-Im-s8p"/>
+                        <outlet property="progressViewMood" destination="pNq-Oe-QTu" id="dGZ-ZX-D1g"/>
+                        <outlet property="progressViewSimple" destination="Eil-PD-c5a" id="619-SP-zZH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
