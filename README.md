@@ -1,11 +1,9 @@
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 # OMCircularProgress
 
 Custom circular progress UIControl with steps, images, text and individual animations in Swift
-
-[![Version](https://img.shields.io/cocoapods/v/OMCircularProgress.svg?style=flat)](http://cocoadocs.org/docsets/OMCircularProgress)
-[![Build Status](https://travis-ci.org/jaouahbi/OMCircularProgress.svg?branch=master)](https://travis-ci.org/jaouahbi/OMCircularProgress)
-
-
 
 ## History
 
@@ -41,10 +39,11 @@ Open a issue.
 
 ## CocoaPods Installation
 
-> Easiest installation is through Cocoapods. Add the following line to your Podfile:
+> NO
 
-pod `OMCircularProgress`
-and run pod install in your terminal.
+## Carthage Installation
+
+> NO
 
 ## Swift package manager Installation
 
