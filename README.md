@@ -11,7 +11,7 @@ In 2013, while working for a client specializing in health and fitness.
 I had to develop an application that would show progress in stages.
 The version I made achieved a very simple and limited representation of the progress, so I decided to write a more complete UIControl from scratch for the representation and visualization of each stage of the task.
 
-![](https://github.com/JorgeOOMM/OMCircularProgress/blob/master/gif/gif.gif)
+![](https://github.com/JorgeOOMM/OMCircularProgress/blob/main/gif/gif.gif)
 
 ## Features
 
